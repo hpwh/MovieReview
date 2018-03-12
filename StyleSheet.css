@@ -1,0 +1,28 @@
+#all{
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+    max-width: 700px;
+   
+      
+}
+img{
+   
+    max-width: 300%;
+    max-height: 400%;
+    margin: 10px;
+     }
+
+  #txt{
+    margin:10px;
+}
+
+  #cast{
+      margin:25px;
+  }
+
+  
+
+  
+  
