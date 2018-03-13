@@ -48,6 +48,7 @@ let currentRating;
 
 for (let i=1; i<=5; i++){
   let star = document.getElementById(i);
+ 
   star.addEventListener("click", function(){
     currentRating = i;
     changeStarRating(i);
