@@ -32,11 +32,7 @@ img{
 }
 
 
-#stars[data-rating="1"] [data-filled-in*="1"],
-#stars[data-rating="2"] [data-filled-in*="2"],
-#stars[data-rating="3"] [data-filled-in*="3"],
-#stars[data-rating="4"] [data-filled-in*="4"],
-#stars[data-rating="5"] [data-filled-in*="5"] {
+#stars span.filled {
   color: darkslategray;
 }
   
