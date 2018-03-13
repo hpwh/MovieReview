@@ -1,4 +1,4 @@
-let movieData = {
+module.exports = {
 title:"Hidden Figures",
 plot:"A feminist manifesto of women's involvement in science.",
 cast:["Taraji P. Henson", "Octavia Spencer", "Janelle Monáe"],

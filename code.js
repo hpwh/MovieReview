@@ -1,3 +1,6 @@
+let movieData = require("./Data");
+let $ = require("jquery");
+
 function renderMovie(data){
 
   ui.title.text(data.title);
@@ -65,3 +68,4 @@ for (let i=1; i<=5; i++){
 }
 
 renderMovie(movieData);
+
