@@ -3,25 +3,42 @@
     display: flex;
     flex-direction: row;
     flex-grow: 2;
-    max-width: 700px;
-   
-      
+    max-width: 700px;    
 }
+
 img{
    
     max-width: 300%;
     max-height: 400%;
     margin: 10px;
-     }
+}
 
-  #txt{
+
+#txt{
     margin:10px;
 }
 
-  #cast{
-      margin:25px;
-  }
 
+#cast{
+      margin:25px;
+}
+  
+
+#stars span {
+    color: rgb(180, 180, 180);
+    user-select: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+#stars[data-rating="1"] [data-filled-in*="1"],
+#stars[data-rating="2"] [data-filled-in*="2"],
+#stars[data-rating="3"] [data-filled-in*="3"],
+#stars[data-rating="4"] [data-filled-in*="4"],
+#stars[data-rating="5"] [data-filled-in*="5"] {
+  color: darkslategray;
+}
   
 
   
