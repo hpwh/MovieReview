@@ -1,12 +1,13 @@
-let movieData = require("./Data");
-let $ = require("jquery");
+import {movieData} from "./data";
+import * as $ from "jquery";
+import { Review } from "./interface";
 
-function renderMovie(data){
+function renderMovie(data: Review){
 
   ui.title.text(data.title);
   ui.plot.text(data.plot);
   ui.img.attr("src", data.img);
-    
+   
    
     ui.cast.empty();
     
@@ -16,10 +17,10 @@ function renderMovie(data){
 
 }
 
-//------------------------------------------------------------------------
+
 
 function changeStarRating(rating){
-  $(".filled").removeClass("filled");
+ $(".filled").removeClass("filled");
   for(let i=1; i<=rating; i++){
     ui.stars[i-1].addClass("filled");
   }
@@ -41,7 +42,7 @@ let ui = {
 };
   
 
-ui.rating.on("click", "span", function(e){
+ui.rating.on("click", "span", (e) =>{
   let star = $(e.target);
   let rating = parseInt(star.attr("id"));
   changeStarRating(rating);
@@ -50,7 +51,7 @@ ui.rating.on("click", "span", function(e){
 let currentRating;
 
 for (let i=1; i<=5; i++){
-  let star = document.getElementById(i);
+  let star = document.getElementById('i');
  
   star.addEventListener("click", function(){
     currentRating = i;

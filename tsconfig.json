@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "sourceMap": true
+  }
+}
+
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "types": [
+      "jquery"
+    ]
+  }
+}
