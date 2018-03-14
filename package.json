@@ -4,9 +4,11 @@
   "description": "",
   "main": "Data.js",
   "scripts": {
-    "styles": "lessc StyleSheet.less StyleSheet.css",
+    "styles": "lessc StyleSheet.less distribution/StyleSheet.css",
     "bundle": "webpack",
-    "start:dev": "webpack-dev-server"
+    "start:dev": "webpack-dev-server",
+    "copyindex": "cp index.html distribution/index.html",
+    "build": "npm run bundle && npm run styles && npm run copyindex"
   },
   "dependencies": {
     "jquery": "^3.3.1"
